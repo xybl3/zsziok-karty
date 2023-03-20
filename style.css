@@ -1,0 +1,88 @@
+@import url("https://db.onlinewebfonts.com/c/022c1f9c43c0c5f997a34d25ed4d5e16?family=GWENT");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gwent";
+}
+.karty {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.karta {
+  position: relative;
+  box-shadow: 5px 5px 5px black;
+  width: 300px;
+  height: 450px;
+  transition: all;
+  transition-duration: 200ms;
+  border-radius: 2%;
+}
+.karta:hover {
+  box-shadow: 10px 10px 5px black;
+  width: 330px;
+  height: 480px;
+}
+.karta > img:hover {
+  box-shadow: 10px 10px 5px black;
+  width: 330px;
+  height: 480px;
+}
+.karta > img {
+  width: 300px;
+  height: 450px;
+  border-radius: 3%;
+  transition: all;
+  transition-duration: 200ms;
+}
+.karta > .moce {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background-color: red;
+  height: 90%;
+}
+.moce > .moc {
+  /* background-color: #ffffffa7; */
+  background-image: url("tekstura.jpg");
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 30px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.karta > .info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  background-image: url("tekstura.jpg");
+  padding: 10px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  border-radius: 2%;
+}
+
+.karta > .info > hr {
+  width: 80%;
+  /* border-top: grey 1px solid; */
+  border-top: 1px solid white;
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
